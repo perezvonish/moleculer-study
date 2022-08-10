@@ -2,15 +2,12 @@ module.exports = {
 	name: 'helper',
 
 	actions: {
-		random() {
-			return Math.round(Math.random() * 10)
-		}
+
 	},
 
 	events: {
-		'helper.called'(payload) {
-			this.logger.info('Helper service Caught an Event')
-			this.logger.info(payload)
+		'helper.called'(nodeId) {
+			return `Hello world, I'm --> ${nodeId}!`
 		},
 	}
 }

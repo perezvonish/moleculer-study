@@ -27,9 +27,9 @@
  */
 module.exports = {
 	// Namespace of nodes to segment your nodes on the same network.
-	namespace: "",
+	namespace: "study",
 	// Unique node identifier. Must be unique in a namespace.
-	nodeID: null,
+	nodeID: "main",
 	// Custom metadata store. Store here what you want. Accessing: `this.broker.metadata`
 	metadata: {},
 
